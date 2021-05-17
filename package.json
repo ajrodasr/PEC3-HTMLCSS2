@@ -34,5 +34,7 @@
     "sharp": "^0.27.1",
     "tailwindcss": "^2.1.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3"
+  }
 }

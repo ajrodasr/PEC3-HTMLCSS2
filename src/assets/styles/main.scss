@@ -18,6 +18,7 @@
 
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
+@import '@fortawesome/fontawesome-free/css/all.css';
 
 /**
  * Import layouts
@@ -30,3 +31,13 @@
  * Do NOT include anything else in this file!
  */
 @tailwind utilities;
+
+@layer components {
+  .nav-item {
+    @apply p-2 text-base hover:text-white-hover;
+  }
+
+  .button-item {
+    @apply flex-auto w-full text-primary text-center uppercase font-bold my-3 md:m-5 shadow-poster-top leading-100 bg-cover bg-center;
+  }
+}

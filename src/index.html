@@ -1,35 +1,224 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
         <!-- do not remove this line! -->
-        <title>UOC Boilerplate</title>
+        <title>UOC BAND</title>
     </head>
-    <body>
-        <figure class="md:flex bg-gray-100 rounded-xl p-8 md:p-0">
-            <img
-                class="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
-                src="./assets/images/logo.png"
-                alt=""
-                width="384"
-                height="512"
-            />
-            <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
-                <blockquote>
-                    <p class="text-lg font-semibold">
-                        “Tailwind CSS is the only framework that I've seen scale on large teams.
-                        It’s easy to customize, adapts to any design, and the build size is tiny.”
-                    </p>
-                </blockquote>
-                <figcaption class="font-medium">
-                    <div class="text-cyan-600">Sarah Dayan</div>
-                    <div class="text-gray-500">Staff Engineer, Algolia</div>
-                </figcaption>
+    <body class="bg-primary-bg">
+        <header>
+            <nav
+                class="
+                    flex
+                    items-center
+                    justify-between
+                    flex-wrap
+                    sm:flex-nowrap
+                    p-3
+                    bg-primary
+                    text-white
+                    shadow-md
+                "
+            >
+                <div class="flex items-center flex-shrink-0 text-white mr-6">
+                    <a class="" href="index.html"
+                        ><img src="./assets/images/logo.png" alt="UOC BAND" width="100"
+                    /></a>
+                </div>
+                <div class="block sm:hidden">
+                    <button
+                        class="
+                            flex
+                            items-center
+                            px-3
+                            py-2
+                            border
+                            rounded
+                            text-teal-200
+                            border-teal-400
+                            hover:text-white-hover
+                            hover:border-white-hover
+                        "
+                    >
+                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20">
+                            <title>Menu</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="sm:block hidden flex-grow">
+                    <div class="text-sm lg:flex-grow">
+                        <ul class="flex list-none">
+                            <li>
+                                <a class="nav-item" href="band-members.html">Band Members</a>
+                            </li>
+                            <li><a class="nav-item" href="#">Bio</a></li>
+                            <li><a class="nav-item" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div
+                class="
+                    w-full
+                    p-5
+                    md:p-0
+                    md:grid md:grid-cols-5 md:grid-rows-3
+                    md:bg-portada-poster md:bg-cover md:bg-center
+                    md:gap-4
+                "
+            >
+                <img
+                    class="w-fill md:hidden"
+                    src="./assets/images/portada/poster.jpg"
+                    alt="UOC BAND in concert"
+                />
+                <img
+                    class="hidden md:block col-start-3 col-end-4 row-start-2 row-end-3"
+                    src="./assets/images/logo.png"
+                    alt="UOC BAND in concert"
+                />
+                <h1
+                    class="
+                        order-1
+                        text-center text-primary text-3xl
+                        p-6
+                        md:shadow-poster-top
+                        md:items-center
+                        md:bg-primary
+                        md:text-transparent
+                        md:opacity-50
+                        md:col-start-1 md:col-end-2
+                        md:row-start-1 md:row-end-3
+                    "
+                >
+                    UOC BAND
+                </h1>
+                <h2
+                    class="
+                        text-black text-2xl
+                        md:shadow-poster-top
+                        md:items-center
+                        md:order-1
+                        md:text-center
+                        md:bg-white-poster
+                        md:text-transparent
+                        md:col-start-4 md:col-end-6
+                        md:row-start-1 md:row-end-2
+                    "
+                >
+                    Rock band
+                </h2>
+                <p
+                    class="
+                        md:shadow-poster-bottom-left
+                        md:items-center
+                        md:order-1
+                        py-4
+                        text-left
+                        md:text-white
+                        md:p-4
+                        md:m-0
+                        md:bg-white-poster
+                        md:col-start-1
+                        col-end-4
+                        md:row-start-3
+                        row-end-4
+                    "
+                >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit tortor
+                    at augue eleifend, vitae porttitor orci porta. Aliquam facilisis auctor enim,
+                    quis congue nibh venenatis at. Orci varius natoque penatibus et magnis dis
+                    parturient montes, nascetur ridiculus mus. Etiam finibus tempus metus, vel
+                    pharetra nibh sodales nec. Donec eu venenatis magna, vel tristique lorem. Nunc
+                    vel quam vitae nisl pellentesque dictum. Etiam suscipit, ligula et tempor
+                    finibus, ex magna tincidunt ligula, at tincidunt lacus leo non est. Vestibulum
+                    accumsan iaculis ipsum, non lobortis ligula efficitur vel.
+                </p>
+                <button
+                    class="
+                        bg-primary
+                        col-end-6
+                        row-end-4
+                        uppercase
+                        font-bold
+                        text-white
+                        hover:text-white-hover
+                        p-1
+                        shadow-poster-top
+                        w-full
+                        md:shadow-poster-bottom-right
+                        md:items-center
+                        md:order-1
+                        md:text-center
+                        md:col-start-5
+                        md:row-start-3
+                    "
+                    type="button"
+                >
+                    Tour dates
+                </button>
             </div>
-        </figure>
+            <div class="md:flex p-5">
+                <button
+                    class="button-item bg-members bg-bottom"
+                    onclick="window.location.href='band-members.html'"
+                >
+                    BAND MEMBERS
+                </button>
+                <button class="button-item bg-bio" onclick="window.location.href='#'">BIO</button>
+                <button class="button-item bg-contact" onclick="window.location.href='#'">
+                    CONTACT
+                </button>
+            </div>
+        </main>
+        <footer>
+            <nav class="bg-primary text-white p-5">
+                <div class="sm:flex w-full">
+                    <a class="sm:flex-1" href="index.html"
+                        ><img
+                            class="m-auto sm:m-0"
+                            src="./assets/images/logo.png"
+                            alt="UOC BAND"
+                            width="100"
+                    /></a>
+                    <div class="sm:flex-auto">
+                        <ul class="sm:flex sm:justify-center sm:my-0 text-center my-5">
+                            <li class="nav-item font-bold">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="band-members.html">Band Members</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Bio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sm:flex-1">
+                        <ul class="flex sm:justify-end justify-center">
+                            <li class="nav-item">
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#"><i class="fab fa-youtube-square"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </footer>
         <script src="./assets/scripts/main.js"></script>
         <!-- do not remove this line! -->
     </body>
