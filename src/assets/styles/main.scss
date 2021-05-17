@@ -38,6 +38,26 @@
   }
 
   .button-item {
-    @apply flex-auto w-full text-primary text-center uppercase font-bold my-3 md:m-5 shadow-poster-top leading-100 bg-cover bg-center;
+    @apply flex-auto w-full text-primary text-center uppercase font-bold my-3 md:m-5 shadow-poster-top leading-100 bg-cover bg-center hover:shadow-button-hover;
+  }
+
+  .card {
+    @apply w-full sm:flex-3 m-3 bg-white border rounded-md shadow-poster-top;
+  }
+
+  .card-image {
+    @apply rounded-t-md;
+  }
+
+  .card-body {
+    @apply p-5 text-center;
+  }
+
+  .card-title {
+    @apply text-3xl text-primary;
+  }
+
+  .card-text {
+    @apply text-left my-4;
   }
 }

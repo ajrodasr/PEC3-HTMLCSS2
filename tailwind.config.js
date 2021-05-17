@@ -21,9 +21,13 @@ module.exports = {
         'poster-top': '2px 2px 2px black',
         'poster-bottom-right': '-2px -2px 2px black',
         'poster-bottom-left': '2px 0px 2px black',
+        'button-hover': '2px 4px 6px black',
       },
       lineHeight: {
         100: '100px',
+      },
+      flex: {
+        3: '1 0 30%',
       },
     },
   },
